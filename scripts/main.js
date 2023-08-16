@@ -1,7 +1,10 @@
 import { getFish } from './database.js'
 import { FishList } from './fish/toPrint.js'
 
+
+
 const allFish = getFish()
+
 
 /*
     What is the CSS selector for the element where you
