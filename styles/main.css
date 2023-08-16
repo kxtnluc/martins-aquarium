@@ -1,0 +1,95 @@
+body {
+    background-color: rgb(41, 34, 34);
+}
+
+.imageHeader {
+    position: relative;
+    text-align: center;
+}
+
+.imageHeader #main {
+    border: rgb(0, 89, 255) dashed 10px;
+    width: 1400px;
+    margin-top: 15px;
+}
+
+#titleName {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 100px;
+    font-weight: bolder;
+    -webkit-text-stroke: 0.00001in;
+    -webkit-text-stroke-color: blue;
+    color: aliceblue;
+}
+
+/*--------------------------------------------------FISH LIST CSS----------------------------------------------------------------------------*/
+
+.fish_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    color: rgb(203, 218, 231);
+}
+
+.fish_card {
+    border: cyan dashed 1px;
+    padding: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    width: 190px;
+    flex-flow: 1 1 0;
+}
+
+.fish_list aside {
+    margin-top: 17px;
+}
+
+/*--------------------------------------------------QUOTES CSS----------------------------------------------------------------------------*/
+.quotes {
+    display: flex;
+    justify-content: center;
+    
+    font-size: larger;
+    color: rgb(0, 34, 34);
+    -webkit-text-stroke: 0.5px;
+    -webkit-text-stroke-color: rgba(255, 255, 255, 0.918);
+}
+/*--------------------------------------------------LOCATION LIST CSS----------------------------------------------------------------------------*/
+
+.locations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    color: rgb(203, 218, 231);
+}
+
+.location {
+    border: crimson solid 1px;
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    padding-bottom: 20px;
+    padding-top: 4px;
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-flow: 1 1 0;
+    width: 100px;
+}
+
+.location_title {
+    text-align: center;
+}
+
+.location_properties {
+    text-align: center;
+}
