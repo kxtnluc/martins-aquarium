@@ -8,6 +8,7 @@ export const mostHolyFish = () => {
 
     for (const fish of fishes) {
         if(fish.length % 3 === 0){
+            holyFish.push(fish)
             console.log(fish.length + "is a remainder of 3")
         }
     }
