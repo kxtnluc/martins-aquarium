@@ -1,5 +1,5 @@
 import { getFish } from './database.js'
-import { FishList } from './fish/toPrint.js'
+import { FishList, mostHolyFish, soldierFish, nonHolyFish } from './fish/toPrint.js'
 
 
 

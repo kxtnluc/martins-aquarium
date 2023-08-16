@@ -51,9 +51,32 @@ const database = {
             temp: 15,
             location: "Atlantic Ocean"
         }
+    ],
+    tipList: [
+        {
+            id: 1,
+            tip: "unga bunga iuodfhiudshfihsdhfioushdiuofhiuhsiufhiou",
+        },
+        {
+            id: 2,
+            tip: "ooga booga asdasd asasd asdasd asd asfd fghrqaf",
+        },
+        {
+            id: 3,
+            tip: "monkey time ajkfhkjadshfjksdhfkjsdhkjfhdskjfhsdkjfkjsdf",
+        },
+        {
+            id: 4,
+            tip: "you always want to clean the tanks daily!",
+        }
+
     ]
 }
 
 export const getFish = () => {
     return database.fish.map(fish => ({...fish}))
+}
+
+export const getTips = () => {
+    return database.tipList.map(tipList => ({...tipList}))
 }
