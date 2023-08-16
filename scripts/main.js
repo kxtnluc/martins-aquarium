@@ -1,8 +1,9 @@
 import { getFish } from './database.js'
-import { FishList, mostHolyFish, soldierFish, nonHolyFish } from './fish/toPrint.js'
+import { FishList } from './fish/toPrint.js'
+import { TipList } from './tips/tipPrint.js'
 
 
-
+const alltips = TipList()
 const allFish = getFish()
 
 
@@ -17,3 +18,8 @@ const allFish = getFish()
 
 
     parentHTMLElement.innerHTML = FishList()
+
+    const parentHTMLElement2 = document.querySelector(".tipMarker")
+
+
+    parentHTMLElement2.innerHTML = TipList()

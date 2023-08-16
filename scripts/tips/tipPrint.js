@@ -1,24 +1,24 @@
 // Import the function that returns a copy of the fish array
 import { getTips } from '../database.js'
 
-export const FishList = () => {
+export const TipList = () => {
     // Invoke the function that you imported from the database module
     const tips = getTips()
 
     // Start building a string filled with HTML syntax
-    let htmlString = '<ul class="fish_list">'
+    let htmlString2 = '<ul class="fish_list">'
 
     // Create HTNL representations of each fish here
     for (const tip of tips) {
 
         // Why is there a backtick used for this string?
-        htmlString += `
+        htmlString2 += `
         <li>
-            ${tip}
+            ${tip.tip}
         </li>
 `
     }
-    htmlString += `</ul>`
+    htmlString2 += `</ul>`
 
-    return htmlString
+    return htmlString2
 }
