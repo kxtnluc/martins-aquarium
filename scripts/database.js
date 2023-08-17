@@ -70,6 +70,44 @@ const database = {
             tip: "you always want to clean the tanks daily!",
         }
 
+    ],
+    locations: [
+        {
+            id: 1,
+            country: "Japan",
+            sea: "Sea of Japan",
+            water: "Salt"
+        },
+        {
+            id: 2,
+            country: "Italy",
+            sea: "Mediterranean",
+            water: "Salt"
+        },
+        {
+            id: 3,
+            country: "India",
+            sea: "Indian Ocean",
+            water: "Salt"
+        },
+        {
+            id: 4,
+            country: "USA",
+            sea: "T.N. River",
+            water: "Fresh"
+        },
+        {
+            id: 5,
+            country: "Greece",
+            sea: "Mediterranean",
+            water: "Salt"
+        },
+        {
+            id: 7,
+            country: "Russia",
+            sea: "Baltic Sea",
+            water: "Salt"
+        }
     ]
 }
 
@@ -79,4 +117,8 @@ export const getFish = () => {
 
 export const getTips = () => {
     return database.tipList.map(tipList => ({...tipList}))
+}
+
+export const getLocations = () => {
+    return database.locations.map(locations => ({...locations}))
 }

@@ -1,10 +1,12 @@
 import { getFish } from './database.js'
 import { FishList } from './fish/toPrint.js'
 import { TipList } from './tips/tipPrint.js'
+import { locationList } from './locations/locationPrint.js'
 
 
 const alltips = TipList()
 const allFish = getFish()
+const allLocations = locationList()
 
 
 /*
@@ -19,7 +21,11 @@ const allFish = getFish()
 
     parentHTMLElement.innerHTML = FishList()
 
-    const parentHTMLElement2 = document.querySelector(".tipMarker")
+    const parentTipHTMLElement = document.querySelector(".tipMarker")
 
 
-    parentHTMLElement2.innerHTML = TipList()
+    parentTipHTMLElement.innerHTML = TipList()
+
+    const parentLocationHTMLElement =  document.querySelector(".locationSelector")
+
+    parentLocationHTMLElement.innerHTML = locationList()
